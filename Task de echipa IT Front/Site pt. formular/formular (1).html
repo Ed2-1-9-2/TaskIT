@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formular de inscriere</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form>
+
+        <fieldset>
+            <legend>Multuim pentru donatie!</legend>
+
+        <div>
+            <label for="lname">Nume:</label>
+            <input type="text" id="lname" placeholder="Popescu" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="fname">Prenume:</label>
+            <input type="text" id="fname" placeholder="Popica" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" placeholder="autumnfest@gmail.com" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="telnr">Numar de telefon:</label>
+            <input type="tel" id="telnr" placeholder="0722222222" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="gender">Gender:</label>
+
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="gender" value="Mr.">
+
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." name="gender" value="Mrs.">
+
+            <label for="Non-binary">Non-binary</label>
+            <input type="radio" id="Non-binary" name="gender" value="Non-binary">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="donatie">Tipul donatiei:</label>
+            <select name="Tipul donatiei:" id="donatie">
+                <option>Bunuri</option>
+                <option>Servicii</option>
+                <option>Bani</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="mesaj">Mentiuni:</label>
+            <textarea name="mesaj" id="mesaj" cols="10" rows="3"></textarea>
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit">
+        </div>
+         
+        </fieldset>
+
+    </form>
+
+</body>
