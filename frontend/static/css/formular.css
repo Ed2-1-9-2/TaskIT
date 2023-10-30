@@ -1,0 +1,78 @@
+{
+    margin: 0cm;
+    padding: 0cm;
+    font-family: 'Lato', sans-serif;
+}
+
+fieldset{
+    margin: 2cm 0;
+    padding: 1cm 2cm;
+    border: solid 1px #e79508;
+    border-radius: 6px;
+    min-width: 200px;
+}
+
+legend {
+    font-size: 1.25cm;
+    padding: 0.25cm;
+    color: #eaaf0f;
+}
+
+label{
+    display: block;
+    margin-top: 1cm;
+}
+
+.checks label{
+    margin-top: 0;
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+input {
+    padding: .5cm;
+    border: solid 1px #999;
+}
+
+input[type="email"], input[type="text"] {
+    width: 10cm;
+}
+
+textarea {
+    min-height: 4cm;
+    min-width: 100%;
+    padding: .5cm;
+    border: solid 1px #999;
+}
+
+input[type="submit"] {
+    padding: 0.35cm 0.6cm;
+    border-radius: 4px;
+    background-color: #eee05f;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: .5cm;
+}
+
+input[type="reset"] {
+    padding: 0.35cm 0.6cm;
+    border-radius: 4px;
+    background-color: #eee05f;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: .5cm;
+}
+
+@media screen and (min-width: 430px) {
+    legend {
+        font-size: 1.75cm;
+    }
+    fieldset {
+        width: 40%;
+        min-width: 320px;
+        margin: auto;
+    }
+    
+}
