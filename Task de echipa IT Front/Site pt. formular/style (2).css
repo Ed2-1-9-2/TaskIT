@@ -1,78 +1,221 @@
-{
-    margin: 0cm;
-    padding: 0cm;
-    font-family: 'Lato', sans-serif;
+body .body{
+  background-color : #3e7d3a;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+body {
+  background-color : #b57d8a;
 }
 
-fieldset{
-    margin: 2cm 0;
-    padding: 1cm 2cm;
-    border: solid 1px #ccc;
-    border-radius: 6px;
-    min-width: 200px;
-}
+.logo-container {
+    float: right;
+    top: 100%;
+    left: 50%;
+  }
+  /*
+  .logo{
+    background-image: url(assets/logo.png);
+    width: 100%;
+    height: 100%;
+  }*/
 
-legend {
-    font-size: 1.25cm;
-    padding: 0.25cm;
-    color: #999;
-}
-
-label{
+  #header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgb(189, 121, 121);
+    align-items: center;
+    padding: 10px;
+  }
+  header {
+    background-color: rgb(131, 76, 76);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #7e3232;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #e1d4dd;
     display: block;
-    margin-top: 1cm;
-}
-
-.checks label{
-    margin-top: 0;
-}
-
-label:first-of-type {
-    margin-top: 0;
-}
-
-input {
-    padding: .5cm;
-    border: solid 1px #999;
-}
-
-input[type="email"], input[type="text"] {
-    width: 10cm;
-}
-
-textarea {
-    min-height: 4cm;
-    min-width: 100%;
-    padding: .5cm;
-    border: solid 1px #999;
-}
-
-input[type="submit"] {
-    padding: 0.35cm 0.6cm;
-    border-radius: 4px;
-    background-color: #333;
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-    font-size: .5cm;
-}
-
-input[type="reset"] {
-    padding: 0.35cm 0.6cm;
-    border-radius: 4px;
-    background-color: #333;
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-    font-size: .5cm;
-}
-
-@media screen and (min-width: 430px) {
-    legend {
-        font-size: 1.75cm;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: rgb(224, 117, 22);
+    text-align: center;
+  }
+  
+  .button {
+    border: none;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    background-color: rgb(225, 132, 33);
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .button:hover {
+    background: rgb(225, 132, 33);
+  }
+  
+  .swiper-navBtn {
+    color: rgb(225, 132, 33);
+    transition: color 0.3s ease 0s;
+  }
+  
+  .swiper-navBtn:hover {
+    color: rgb(225, 132, 33);
+  }
+  
+  .swiper-navBtn::before, .swiper-navBtn::after {
+    font-size: 35px;
+  }
+  
+  .swiper-button-next {
+    right: 0px;
+  }
+  
+  .swiper-button-prev {
+    left: 0px;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: rgb(110, 147, 247);
+    opacity: 1;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: rgb(64, 112, 244);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slide-content {
+        margin: 0px 10px;
     }
-    fieldset {
-        width: 40%;
-        min-width: 320px;
-        margin: auto;
+  
+    .swiper-navBtn {
+        display: none;
     }
-    
+  }
+  
+  
+  
+  h1 {
+    text-align: center;
+    color: rgb(247, 177, 0);
+    font-size: 15px;
+  }
+  
+  h2 {
+    color: rgb(19, 72, 19);
+  }
+  
+  p {
+    color: #242423;
+  }
+  
+ 
+  .container{
+    background-color: #523543;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+    width: 780px;
+    margin: 0px auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  /* Poziționare centrală a containerului */
+  .container_invizibil {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    height: 100vh; /* Aceasta va centra containerul pe întreaga înălțime a vizualizării */
+    margin: 0 auto;
+    border: none;
+}
+.column1 {
+  display: inline-block; /* Face coloana să fie afișată ca un bloc pe orizontală */
+  text-align: left; /* Aliniază conținutul la stânga */
+  width: 50%; /* Ajustați lățimea coloanei în funcție de preferințe */
+}
+
+  .container{
+    transition: border 0.3s;
+    border-color: #F6b8D1;
+    box-shadow: 0 0 10px #F6b8D1;
+}
+.container:hover {
+    border: 2px solid ; /* Green color when hovered */
+    outline: none;
+        border-color: #F6b8D1;
+        box-shadow: 0 0 10px #F6b8D1;
+}
+.container{
+    border: 2px solid #F6b8D1; /* Green border color */
+}
+@keyframes shine {
+    0% {
+        border-color: #F6b8D1;
+    }
+    50% {
+        border-color: #F6b8D1; /* Slightly brighter green */
+    }
+    100% {
+        border-color: #F6b8D1;
+    }
+}
+form fieldset {
+  border: none; /* Elimină chenarul formularului */
+}
+
+form input, form select, form textarea {
+  border: none; /* Elimină chenarele din jurul elementelor de formular */
+  margin: 5px 0; /* Adaugă spațiu între elementele de formular */
 }
