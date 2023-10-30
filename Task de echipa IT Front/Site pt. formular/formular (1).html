@@ -1,92 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formular de inscriere</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Targul Caritabil Formular</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="swiperrr.css">
 </head>
-
-<body>
-    <form>
-
-        <fieldset>
-            <legend>Multuim pentru donatie!</legend>
-
-        <div>
-            <label for="lname">Nume:</label>
-            <input type="text" id="lname" placeholder="Popescu" required>
+<body id="body3">
+    <header id="header">
+      
+        <nav class="nav">
+            <div class="row">
+    
+           <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Acasa</a>
+    <a href="Galerie.html">Galerie </a>
+    <a href="SiteFormular.html">Formular</a>
+    <!--<a href="#"></a> -->
+    
+    </div>
+    </div>
+    </nav>
+    <button class="openbtn" onclick="openNav()" >☰</button>  
+          <div class="row">
+          <nav class="navbar">
+            <h1 class="h1">
+    
+                <div class="row"><i class="fa-solid fa-bars"></i>
+                <div class="logo">
+                
+    <h1>Formular</h1>             
+    
+                </div>
+            </div>
         </div>
+    
+        </nav>
+    
+      </header>
 
-        <br>
+      <div class="container_invizibil" id="rezervare">
+        <div class="container" style="width: 650px; height:350px; margin: 0 auto;">
+            <div class="column1">
+                <form>
+                    <fieldset>
 
-        <div>
-            <label for="fname">Prenume:</label>
-            <input type="text" id="fname" placeholder="Popica" required>
+                        <label for="lname">Nume:</label><br>
+                        <input type="text" id="lname" placeholder="Popescu" required><br>
+
+                        <label for="fname">Prenume:</label><br>
+                        <input type="text" id="fname" placeholder="Popica" required><br>
+
+                        <label for="mail">Email:</label><br>
+                        <input type="email" id="mail" placeholder="autumnfest@gmail.com" required><br>
+
+                        <label for="telnr">Numar de telefon:</label><br>
+                        <input type="tel" id="telnr" placeholder="0722222222" required><br>
+
+                        <label for="gender">Genul:</label><br>
+
+                        <label for="Mr.">Masculin</label>
+                        <input type="radio" id="Mr." name="genul" value="Masculin">
+
+                        <label for="Mrs.">Feminin</label>
+                        <input type="radio" id="Mrs." name="gender" value="Feminin">
+
+                        <label for="Non-binary">Nu prefer sa raspund</label>
+                        <input type="radio" id="Non-binary" name="gender" value="Nu prefer sa raspund">
+
+                        <label for="donatie">Tipul donatiei:</label><br>
+                        <select name="Tipul donatiei" id="donatie">
+                            <option>Bunuri</option>
+                            <option>Servicii</option>
+                            <option>Bani</option>
+                        </select>
+
+                        <label for="mesaj">Mentiuni:</label><br>
+                        <textarea name="mesaj" id="mesaj" cols="10" rows="3"></textarea><br>
+
+                        <div>
+                            <input type="reset" value="Resetează">
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Trimite"> <!--                        <legend>Multumim pentru donatie!</legend>
+                            -->
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </div>
+    </div>
+    <!--
 
-        <br>
-
-        <div>
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" placeholder="autumnfest@gmail.com" required>
-        </div>
-
-        <br>
-
-        <div>
-            <label for="telnr">Numar de telefon:</label>
-            <input type="tel" id="telnr" placeholder="0722222222" required>
-        </div>
-
-        <br>
-
-        <div>
-            <label for="gender">Gender:</label>
-
-            <label for="Mr.">Mr.</label>
-            <input type="radio" id="Mr." name="gender" value="Mr.">
-
-            <label for="Mrs.">Mrs.</label>
-            <input type="radio" id="Mrs." name="gender" value="Mrs.">
-
-            <label for="Non-binary">Non-binary</label>
-            <input type="radio" id="Non-binary" name="gender" value="Non-binary">
-        </div>
-
-        <br>
-
-        <div>
-            <label for="donatie">Tipul donatiei:</label>
-            <select name="Tipul donatiei:" id="donatie">
-                <option>Bunuri</option>
-                <option>Servicii</option>
-                <option>Bani</option>
-            </select>
-        </div>
-
-        <br>
-
-        <div>
-            <label for="mesaj">Mentiuni:</label>
-            <textarea name="mesaj" id="mesaj" cols="10" rows="3"></textarea>
-        </div>
-
-        <br>
-
-        <div>
-            <input type="reset">
-        </div>
-
-        <br>
-
-        <div>
-            <input type="submit">
-        </div>
-         
-        </fieldset>
-
-    </form>
-
+    -->
+    <script src="SiteJavascript.js" ></script>
 </body>
+</html>
