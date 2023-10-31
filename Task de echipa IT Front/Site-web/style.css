@@ -7,7 +7,7 @@ body .body{
     display: flex;
 }
 body {
-  background-color : #b57d8a;
+  background-color : #C6DEA3;
 }
 
 .logo-container {
@@ -24,15 +24,23 @@ body {
 
   #header {
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index: 5;
     width: 100%;
     display: flex;
     justify-content: center;
-    background: rgb(189, 121, 121);
+    background: rgb(13, 109, 60);
     align-items: center;
     padding: 10px;
+  }
+  #prezentare{
+    margin-top: 80px;
+    padding: 20px;
+  }
+  #galerie {
+    margin-top: 80px; /* Ajustează valoarea pentru a stabili spațiul dorit între header și secțiunea de galerie. */
+    padding: 20px;
   }
   header {
     background-color: rgb(131, 76, 76);
@@ -48,7 +56,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #7e3232;
+    background-color: #84CD17;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -58,13 +66,13 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #e1d4dd;
+    color: white;
     display: block;
     transition: 0.3s;
   }
   
   .sidebar a:hover {
-    color: #f1f1f1;
+    color: white;
   }
   
   .sidebar .closebtn {
@@ -76,8 +84,11 @@ body {
   
   .openbtn {
     font-size: 20px;
-  }
-  
+    left: -525px;
+    width: 25px;
+    position: relative;
+    color: transparent;
+}
   .description {
     font-size: 14px;
     color: rgb(224, 117, 22);
@@ -87,7 +98,7 @@ body {
   .button {
     border: none;
     font-size: 16px;
-    color: rgb(255, 255, 255);
+    color: transparent;
     padding: 8px 16px;
     background-color: rgb(225, 132, 33);
     border-radius: 6px;
@@ -95,20 +106,7 @@ body {
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
-  
-  .button:hover {
-    background: rgb(225, 132, 33);
-  }
-  
-  .swiper-navBtn {
-    color: rgb(225, 132, 33);
-    transition: color 0.3s ease 0s;
-  }
-  
-  .swiper-navBtn:hover {
-    color: rgb(225, 132, 33);
-  }
-  
+
   .swiper-navBtn::before, .swiper-navBtn::after {
     font-size: 35px;
   }
@@ -130,7 +128,7 @@ body {
     background-color: rgb(64, 112, 244);
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     .slide-content {
         margin: 0px 10px;
     }
@@ -155,7 +153,9 @@ body {
   p {
     color: #242423;
   }
-  
+  .center{
+    color: #6c6864;
+  }
   /*
 <div class="container_invizibil" id="rezervare">
     <div class="container" style="display: flex; align-items: center;">
@@ -214,7 +214,7 @@ body {
 
   .container{
     transition: border 0.3s;
-    border-color: #F6b8D1;
+    border-color: #C11113;
     box-shadow: 0 0 10px #F6b8D1;
 }
 .container:hover {
@@ -255,13 +255,16 @@ select {
 }
  */
  .container1{
-  background-color: #8f2185;
+  background-color: #b6cf90;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 350px;
+  height: 500px;
   width: 100%;
   margin: 0px 25px auto;
+  padding: 15px;
+  border-color:rgb(13, 109, 60);
+  left: -5px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -270,13 +273,18 @@ select {
 
  }
 .container2{
-  background-color: #8f2185;
+  background-color: #b6cf90;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 350px;
+  height: 800px;
   width: 100%;
   margin: 0px 25px auto;
+  left: -5px;
+
+  padding: 15px;
+  border-color:rgb(13, 109, 60);
+
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -285,13 +293,18 @@ select {
 
  }
  .container3{
-  background-color: #8f2185;
+  background-color: #b6cf90;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 350px;
+  height: 300px;
   width: 100%;
   margin: 0px 25px auto;
+  left: -5px;
+
+  padding: 15px;
+  border-color:rgb(13, 109, 60);
+
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -299,4 +312,30 @@ select {
   overflow: auto; /* Add overflow to display scrollbars if content overflows */
 
  }
-  
+ .container4{
+  background-color: #FFDFA1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  margin: 0px 25px auto;
+  left: -5px;
+
+  padding: 15px;
+  border-color:rgb(13, 109, 60);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: auto; 
+ }
+ .container2 .container3 .container4  :hover {
+  border: 2px solid ; /* Green color when hovered */
+  outline: none;
+      border-color: #F6b8D1;
+      box-shadow: 0 0 10px #F6b8D1;
+}
+.container2 .container3 .container4{
+  border: 2px solid #F6b8D1; /* Green border color */
+}
