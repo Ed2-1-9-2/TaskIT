@@ -25,8 +25,8 @@
     </div>
     </div>
     </nav>
-    <button class="openbtn" onclick="openNav()" >☰</button>  
-          <div class="row">
+    <button class="openbtn" onclick="openNav()" style="background-color: rgba(0, 0, 0, 0); border: none;"><p>☰</p></button>
+    <div class="row">
           <nav class="navbar">
             <h1 class="h1">
     
@@ -44,51 +44,49 @@
       </header>
 
       <div class="container_invizibil" id="rezervare">
-        <div class="container" style="width: 650px; height:350px; margin: 0 auto;">
+        <div class="container" style="width: 520px; height:520px; margin: 0 auto;">
             <div class="column1">
                 <form>
                     <fieldset>
-
+    
                         <label for="lname">Nume:</label><br>
                         <input type="text" id="lname" placeholder="Popescu" required><br>
-
+    
                         <label for="fname">Prenume:</label><br>
                         <input type="text" id="fname" placeholder="Popica" required><br>
-
+    
                         <label for="mail">Email:</label><br>
                         <input type="email" id="mail" placeholder="autumnfest@gmail.com" required><br>
-
+    
                         <label for="telnr">Numar de telefon:</label><br>
                         <input type="tel" id="telnr" placeholder="0722222222" required><br>
-
+    
                         <label for="gender">Genul:</label><br>
-
-                        <label for="Mr.">Masculin</label>
-                        <input type="radio" id="Mr." name="genul" value="Masculin">
-
-                        <label for="Mrs.">Feminin</label>
-                        <input type="radio" id="Mrs." name="gender" value="Feminin">
-
-                        <label for="Non-binary">Nu prefer sa raspund</label>
-                        <input type="radio" id="Non-binary" name="gender" value="Nu prefer sa raspund">
-
+    
+                        <div>
+                            <label for="Mr.">Masculin</label>
+                            <input type="radio" id="Mr." name="genul" value="Masculin"><br>
+                        
+                            <label for="Mrs.">Feminin</label>
+                            <input type="radio" id="Mrs." name="gender" value="Feminin"><br>
+                        
+                            <label for="Non-binary">Prefer sa nu raspund</label>
+                            <input type="radio" id="Non-binary" name="gender" value="Prefer sa nu raspund"><br>
+                        </div>
+    
                         <label for="donatie">Tipul donatiei:</label><br>
                         <select name="Tipul donatiei" id="donatie">
                             <option>Bunuri</option>
                             <option>Servicii</option>
                             <option>Bani</option>
                         </select>
-
+    
                         <label for="mesaj">Mentiuni:</label><br>
-                        <textarea name="mesaj" id="mesaj" cols="10" rows="3"></textarea><br>
-
+                        <textarea name="mesaj" id="mesaj" cols="30" rows="5"></textarea>
+    
                         <div>
-                            <input type="reset" value="Resetează">
-                        </div>
-
-                        <div>
-                            <input type="submit" value="Trimite"> <!--                        <legend>Multumim pentru donatie!</legend>
-                            -->
+                            <input type="reset" value="Resetează" link="SiteFormular.html"><br>
+                            <input type="submit" value="Trimite" link=""><br>
                         </div>
                     </fieldset>
                 </form>
@@ -98,6 +96,7 @@
     <!--
 
     -->
-    <script src="SiteJavascript.js" ></script>
+    <script src="SiteJavascript.js"></script>
+    
 </body>
 </html>
