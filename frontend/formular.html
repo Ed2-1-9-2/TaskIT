@@ -1,71 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>formular de inscriere</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link type="text/css" rel="stylesheet" href="./static/css/formular.css" />
+  </head>
 
-<body>
+  <body>
     <form>
-
-        <fieldset>
-            <legend>Multumim pentru donatie!</legend>
-
-        <div>
-            <label for="lname">Nume:</label>
-            <input type="text" id="lname" placeholder="Popescu" required>
-        </div>
-
-        <br>
+      <fieldset>
+        <legend>Multumim pentru donatie!</legend>
 
         <div>
-            <label for="fname">Prenume:</label>
-            <input type="text" id="fname" placeholder="Popica" required>
+          <label for="lname">Nume:</label>
+          <input type="text" id="lname" placeholder="Popescu" required />
         </div>
 
-        <br>
+        <br />
 
         <div>
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" placeholder="autumnfest@gmail.com" required>
+          <label for="fname">Prenume:</label>
+          <input type="text" id="fname" placeholder="Popica" required />
         </div>
 
-        <br>
+        <br />
 
         <div>
-            <label for="telnr">Numar de telefon:</label>
-            <input type="tel" id="telnr" placeholder="0722222222" required>
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" placeholder="autumnfest@gmail.com" required />
         </div>
 
-        <br>
+        <br />
 
         <div>
-            <label for="donatie">Tipul donatiei:</label>
-            <select name="Tipul donatiei:" id="donatie">
-                <option>Bunuri</option>
-                <option>Servicii</option>
-                <option>Bani</option>
-            </select>
+          <label for="telnr">Numar de telefon:</label>
+          <input type="tel" id="telnr" placeholder="0722222222" required />
         </div>
 
-        <br>
+        <br />
 
         <div>
-            <label for="mesaj">Mentiuni:</label>
-            <textarea name="mesaj" id="mesaj" cols="10" rows="3"></textarea>
+          <label for="donatie">Tipul donatiei:</label>
+          <select name="Tipul donatiei:" id="donatie">
+            <option>Bunuri</option>
+            <option>Servicii</option>
+            <option>Bani</option>
+          </select>
         </div>
 
-        <br>
-       
+        <br />
+
         <div>
-            <input type="submit">
+          <label for="mesaj">Mentiuni:</label>
+          <textarea name="mesaj" id="mesaj" cols="10" rows="3"></textarea>
         </div>
-         
-        </fieldset>
 
+        <br />
+
+        <div>
+          <input type="submit" />
+        </div>
+      </fieldset>
     </form>
-
-</body>
+  </body>
+</html>
