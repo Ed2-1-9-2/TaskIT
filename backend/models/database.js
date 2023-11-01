@@ -3,6 +3,8 @@ const { Sequelize, DataTypes } = require('sequelize');
 const database = new Sequelize('targ_db', 'root', '', {
     dialect: 'mysql',
     host: 'localhost',
+    username: 'user',
+    password: 'password',
     logging: false,
     define: {
         charset: 'utf8',
@@ -11,7 +13,7 @@ const database = new Sequelize('targ_db', 'root', '', {
     }
 });
 
-const donatorDb = database.define('donator', {
+const donationDb = database.define('donation', {
     Id: {
         type: DataTypes.BIGINT,
         primaryKey: true,
@@ -33,15 +35,6 @@ const donatorDb = database.define('donator', {
     phone: {
         type: DataTypes.BIGINT,
         allowNull: false
-    }
-});
-
-const donationDb = database.define('donation', {
-    Id: {
-        type: DataTypes.BIGINT,
-        primaryKey: true,
-        autoIncrement: true,
-        allowNull: false
     },
     donationType: {
         type: DataTypes.STRING,
@@ -51,13 +44,9 @@ const donationDb = database.define('donation', {
         type: DataTypes.TEXT,
         allowNull: true
     },
-    donationDate: {
+    createdAt: {
         type: DataTypes.DATE,
         allowNull: false
-    },
-    value: {
-        type: DataTypes.FLOAT,
-        allowNull: true
     }
 });
 
@@ -65,6 +54,8 @@ function resetDatabase() {
     return database.sync({ force: true });
 }
 
-donatorDb.hasMany(donationDb);
+function insertDonation(donation) {
+    return donationDb.create(donation, { returning: true });
+}
 
-module.exports = { resetDatabase };
+module.exports = { resetDatabase, insertDonation };
