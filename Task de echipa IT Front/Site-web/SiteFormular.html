@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Targul Caritabil Formular</title>
+    <title>Târgul Speranței Formular</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
@@ -17,7 +17,7 @@
     
            <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="index.html">Acasa</a>
+    <a href="index.html">Acasă</a>
     <a href="Galerie.html">Galerie </a>
     <a href="SiteFormular.html">Formular</a>
     <!--<a href="#"></a> -->
@@ -25,7 +25,7 @@
     </div>
     </div>
     </nav>
-    <button class="openbtn" onclick="openNav()" style="background-color: rgba(0, 0, 0, 0); border: none;"><p>☰</p></button>
+    <button class="openbtn" onclick="openNav()" style="background-color: rgba(0, 0, 0, 0); border: none; left: -600px;"><p>☰</p></button>
     <div class="row">
           <nav class="navbar">
             <h1 class="h1">
@@ -33,7 +33,7 @@
                 <div class="row"><i class="fa-solid fa-bars"></i>
                 <div class="logo">
                 
-    <h1 style="font-size: 20px">Formular</h1>             
+    <h1 style="font-size: 20px;">Târgul Speranței Formular</h1>             
     
                 </div>
             </div>
@@ -42,57 +42,73 @@
         </nav>
     
       </header>
-
-      <div class="container_invizibil" id="rezervare">
-        <div class="container" style="width: 520px; height:520px; margin: 0 auto;">
-            <div class="column1">
-                <form>
-                    <fieldset>
-    
-                        <label for="lname">Nume:</label><br>
-                        <input type="text" id="lname" placeholder="Popescu" required><br>
-    
-                        <label for="fname">Prenume:</label><br>
-                        <input type="text" id="fname" placeholder="Popica" required><br>
-    
-                        <label for="mail">Email:</label><br>
-                        <input type="email" id="mail" placeholder="autumnfest@gmail.com" required><br>
-    
-                        <label for="telnr">Numar de telefon:</label><br>
-                        <input type="tel" id="telnr" placeholder="0722222222" required><br>
-    
-                        <label for="gender">Genul:</label><br>
-    
-                        <div>
-                            <label for="Mr.">Masculin</label>
-                            <input type="radio" id="Mr." name="genul" value="Masculin"><br>
-                        
-                            <label for="Mrs.">Feminin</label>
-                            <input type="radio" id="Mrs." name="gender" value="Feminin"><br>
-                        
-                            <label for="Non-binary">Prefer sa nu raspund</label>
-                            <input type="radio" id="Non-binary" name="gender" value="Prefer sa nu raspund"><br>
+      <section id="prezentare">
+        <div class="container_invizibil" id="rezervare">
+          <div class="container1">
+              <form action="">
+                  <div class="b_form-wrapper">
+                    <div class="b_input-wrapper">
+                      <label for="nume">Nume</label>
+                      <input type="text" />
+                    </div>
+            
+                    <div class="b_input-wrapper">
+                      <label for="prenume">Prenume</label>
+                      <input type="text" />
+                    </div>
+            
+                    <div class="b_input-wrapper">
+                      <label for="email">Email</label>
+                      <input type="email" />
+                    </div>
+            
+                    <div class="b_input-wrapper">
+                      <label for="tel">Telefon</label>
+                      <input type="tel" />
+                    </div>
+            
+                    <div class="b_inline-wrapper">
+                      <label for="donatie">Tipul donației</label>
+                      <select name="" id="">
+                        <option value="">Monetară</option>
+                        <option value="">Bunuri</option>
+                        <option value="">Carți</option>
+                      </select>
+                    </div>
+            
+                    <div class="b_input-wrapper">
+                      <label for="suma">Suma</label>
+                      <div class="b_money-input">
+                        <div class="b_currency">
+                          <svg
+                            height="32px"
+                            width="32px"
+                            version="1.1"
+                            id="Capa_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 475.6 475.6"
+                            xml:space="preserve"
+                          >
+                            <!-- Your SVG path here -->
+                          </svg>
+                          <span>RON</span>
                         </div>
-    
-                        <label for="donatie">Tipul donatiei:</label><br>
-                        <select name="Tipul donatiei" id="donatie">
-                            <option>Bunuri</option>
-                            <option>Servicii</option>
-                            <option>Bani</option>
-                        </select>
-    
-                        <label for="mesaj">Mentiuni:</label><br>
-                        <textarea name="mesaj" id="mesaj" cols="30" rows="5"></textarea>
-    
-                        <div>
-                            <input type="reset" value="Resetează" link="SiteFormular.html"><br>
-                            <input type="submit" value="Trimite" link=""><br>
-                        </div>
-                    </fieldset>
+                        <input type="text" name="" id="" />
+                      </div>
+                    </div>
+            
+                    <div class="b_input-wrapper">
+                      <label for="email">Mențiuni</label>
+                      <textarea name="" id="" cols="20" rows="10"></textarea>
+                    </div>
+            
+                    <button class="b_submit">Trimite</button>
+                  </div>
                 </form>
-            </div>
-        </div>
-    </div>
+              </div>
+          </div>
+      </section>
     <!--
 
     -->
