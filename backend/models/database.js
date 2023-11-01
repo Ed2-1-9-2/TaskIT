@@ -1,64 +1,70 @@
-const { Sequelize, DataTypes } = require("sequelize");
+const { Sequelize, DataTypes } = require('sequelize');
 
-const database = new Sequelize("targ_db", "root", "", {
-    dialect: "mysql",
-    host: "localhost",
+const database = new Sequelize('targ_db', 'root', '', {
+    dialect: 'mysql',
+    host: 'localhost',
     logging: false,
     define: {
-        charset: "utf8",
-        collate: "utf8_general_ci",
-        timestamps: true,
-    },
+        charset: 'utf8',
+        collate: 'utf8_general_ci',
+        timestamps: true
+    }
 });
 
-const donatorDb = database.define("donator", {
+const donatorDb = database.define('donator', {
     Id: {
         type: DataTypes.BIGINT,
         primaryKey: true,
         autoIncrement: true,
-        allowNull: false,
+        allowNull: false
     },
     firstName: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: false
     },
     lastName: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: false
     },
     email: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: false
     },
     phone: {
         type: DataTypes.BIGINT,
-        allowNull: false,
-    },
+        allowNull: false
+    }
 });
 
-const donationDb = database.define("donation", {
+const donationDb = database.define('donation', {
     Id: {
         type: DataTypes.BIGINT,
         primaryKey: true,
         autoIncrement: true,
-        allowNull: false,
+        allowNull: false
     },
     donationType: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: false
     },
     donationDescription: {
         type: DataTypes.TEXT,
-        allowNull: true,
+        allowNull: true
     },
     donationDate: {
         type: DataTypes.DATE,
-        allowNull: false,
+        allowNull: false
     },
     value: {
         type: DataTypes.FLOAT,
-        allowNull: true,
-    },
+        allowNull: true
+    }
 });
 
+function resetDatabase() {
+    return database.sync({ force: true });
+}
+
 donatorDb.hasMany(donationDb);
+
+module.exports = { resetDatabase };
