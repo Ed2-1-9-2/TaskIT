@@ -43,77 +43,76 @@
         </nav>
     
       </header>
-      <section id="prezentare">
-        <div class="container_invizibil" id="rezervare">
-          <div class="container1">
-              <form action="">
-                  <div class="b_form-wrapper">
-                    <div class="b_input-wrapper">
-                      <label for="nume">Nume</label>
-                      <input type="text" />
-                    </div>
-            
-                    <div class="b_input-wrapper">
-                      <label for="prenume">Prenume</label>
-                      <input type="text" />
-                    </div>
-            
-                    <div class="b_input-wrapper">
-                      <label for="email">Email</label>
-                      <input type="email" />
-                    </div>
-            
-                    <div class="b_input-wrapper">
-                      <label for="tel">Telefon</label>
-                      <input type="tel" />
-                    </div>
-            
-                    <div class="b_inline-wrapper">
-                      <label for="donatie">Tipul donației</label>
-                      <select name="" id="">
-                        <option value="">Monetară</option>
-                        <option value="">Bunuri</option>
-                        <option value="">Carți</option>
-                      </select>
-                    </div>
-            
-                    <div class="b_input-wrapper">
-                      <label for="suma">Suma</label>
-                      <div class="b_money-input">
-                        <div class="b_currency">
-                          <svg
-                            height="32px"
-                            width="32px"
-                            version="1.1"
-                            id="Capa_1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            viewBox="0 0 475.6 475.6"
-                            xml:space="preserve"
-                          >
-                            <!-- Your SVG path here -->
-                          </svg>
-                          <span>RON</span>
-                        </div>
-                        <input type="text" name="" id="" />
-                      </div>
-                    </div>
-            
-                    <div class="b_input-wrapper">
-                      <label for="email">Mențiuni</label>
-                      <textarea name="" id="" cols="20" rows="10"></textarea>
-                    </div>
-            
-                    <button class="b_submit">Trimite</button>
-                  </div>
-                </form>
-              </div>
-          </div>
-      </section>
-    <!--
 
-    -->
-    <script src="SiteJavascript.js"></script>
-    
+      
+        <section id="prezentare">
+          <div class="container_invizibil" id="rezervare">
+            <div class="container1">
+              
+              <form action="/newDonation" method="POST">
+                    <div class="b_form-wrapper">
+                      <div class="b_input-wrapper">
+                        <label for="firstName">Nume</label>
+                        <input type="text" name="firstName"/>
+                      </div>
+              
+                      <div class="b_input-wrapper">
+                        <label for="lastName">Prenume</label>
+                        <input type="text" name="lastName" />
+                      </div>
+              
+                      <div class="b_input-wrapper">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" />
+                      </div>
+              
+                      <div class="b_input-wrapper">
+                        <label for="phone">Telefon</label>
+                        <input type="text" name="phone"/>
+                      </div>
+              
+                      <div class="b_inline-wrapper">
+                        <label for="donationType">Tipul donației</label>
+                        <select name="donationType">
+                          <option value="Monetara">Monetară</option>
+                          <option value="Bunuri">Bunuri</option>
+                          <option value="Servicii">Servicii</option>
+                        </select>
+                      </div>
+              
+                      <div class="b_input-wrapper">
+                        <label for="donationValue">Suma</label>
+                        <div class="b_money-input">
+                          <div class="b_currency">
+                            <svg
+                              height="32px"
+                              width="32px"
+                              version="1.1"
+                              id="Capa_1"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              viewBox="0 0 475.6 475.6"
+                              xml:space="preserve"
+                            >
+                              <!-- Your SVG path here -->
+                            </svg>
+                            <span>RON</span>
+                          </div>
+                          <input type="text" name="donationValue"/>
+                        </div>
+                      </div>
+              
+                      <div class="b_input-wrapper">
+                        <label for="donationDescription">Mențiuni</label>
+                        <textarea name="donationDescription" id="" cols="20" rows="10"></textarea>
+                      </div>
+                 
+                      <button type="submit" class="b_submit">Trimite</button>
+                    </div>
+                  </form>
+
+                </div>
+            </div>
+        </section>
 </body>
 </html>

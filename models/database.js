@@ -1,16 +1,14 @@
 const { Sequelize, DataTypes } = require('sequelize');
 
 const database = new Sequelize('targ_db', 'root', '', {
-    dialect: 'mysql',
-    host: 'localhost',
-    username: 'user',
-    password: 'password',
+    dialect: "mysql",
+    host: "localhost",
     logging: false,
     define: {
-        charset: 'utf8',
-        collate: 'utf8_general_ci',
-        timestamps: true
-    }
+      charset: "utf8",
+      collate: "utf8_general_ci",
+      timestamps: true,
+    },
 });
 
 const donationDb = database.define('donation', {
@@ -42,6 +40,10 @@ const donationDb = database.define('donation', {
     },
     donationDescription: {
         type: DataTypes.TEXT,
+        allowNull: true
+    },
+    donationValue: {
+        type: DataTypes.FLOAT,
         allowNull: true
     },
     createdAt: {
