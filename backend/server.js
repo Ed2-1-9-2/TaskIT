@@ -29,6 +29,14 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../frontend', 'index.html'));
 });
 
+app.get('/formular', (req, res) => {
+    res.sendFile(path.join(__dirname, '../frontend', 'formular.html'));
+});
+
+app.get('/galerie', (req, res) => {
+    res.sendFile(path.join(__dirname, '../frontend', 'galerie.html'));
+});
+
 // Lasam middleware ultimele ca sa functioneze
 app.use(middlewares.notFound);
 app.use(middlewares.errorHandler);

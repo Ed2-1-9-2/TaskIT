@@ -46,7 +46,9 @@ router.post('/newDonation', async (req, res, next) => {
         }
 
         const inserted = await dbUtils.insertDonation(donation);
-        res.json(inserted);
+        //res.json(inserted);
+        console.log(inserted);
+        res.redirect("/");
     } catch (error) {
         // O trimit la error handler, probabil e fatala, e un middleware
         next(error);
