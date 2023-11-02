@@ -267,6 +267,12 @@ summary {
 }
 
 /* styles the form */
+.b_centered-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .b_form-wrapper {
   display: flex;
   flex-direction: column;
@@ -277,6 +283,19 @@ summary {
   background-color: #f1f0f0;
   padding: 2rem;
   border-radius: 1.25rem;
+  width: 50rem;
+}
+
+@media screen and (max-width: 800px) {
+  .b_form-wrapper {
+    width: calc(100vw - 3rem);
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .b_form-wrapper {
+    width: calc(100vw - 1rem);
+  }
 }
 
 .b_input-wrapper {
@@ -369,4 +388,12 @@ summary {
   font-weight: 600;
   color: #fff;
   border-radius: 1.5rem;
+}
+
+.b_submit:hover {
+  background-color: hsl(91, 70%, 25%);
+}
+
+.b_submit:active {
+  transform: scale(0.95);
 }
