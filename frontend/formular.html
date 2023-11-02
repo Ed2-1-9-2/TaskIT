@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Târgul de Speranțe Formular</title>
+    <title>Târgul Speranței - Înscriere</title>
     <link rel="stylesheet" type="text/css" href="public/css/formular.css" />
     <link
       rel="stylesheet"
@@ -11,6 +11,17 @@
     />
   </head>
   <body>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html">Acasa</a>
+      <a href="galerie.html">Galerie </a>
+      <a href="formular.html">Formular</a>
+      <a href="#"></a>
+    </div>
+    <nav class="nav">
+      <h1>Târgul Speranței</h1>
+      <button onclick="openNav()">Open</button>
+    </nav>
     <div class="b_centered-form">
       <form action="">
         <div class="b_form-wrapper">
@@ -107,19 +118,8 @@
     <script src="backend/models/validation.js"></script>
     <script src="backend/api/middleware.js"></script>
   </body>
-  <!-- <header id="header">
+  <!-- 
       
-        <nav class="nav">
-            <div class="row">
-    
-           <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="index.html">Acasa</a>
-    <a href="galerie.html">Galerie </a>
-    <a href="formular.html">Formular</a>
-    <!--<a href="#"></a>
-    
-    </div>
     </div>
     </nav>
     <button class="openbtn" onclick="openNav()" style="background-color: rgba(0, 0, 0, 0); border: none; left: -590px;"><p>☰</p></button>
@@ -138,12 +138,5 @@
     
         </nav>
     
-      </header>
-      <section id="prezentare">
-        <div class="container_invizibil" id="rezervare">
-          <div class="container5">
-              
-              </div>
-          </div>
-      </section> -->
+      </header> -->
 </html>
