@@ -1,36 +1,12 @@
-'use strict'
-
 const express = require('express');
-var logger = require('morgan');
-var path = require('path');
-var app = express();
-const port = 8000;
 
-const validation = require('../TaskdeEchipaIT/models/validation')
-const bodyParser = require('body-parser'); 
-const dbUtils = require("./models/database");
+const dbUtils = require('../models/database');
+const validation = require('../models/validation');
 
+const router = express.Router();
 
-app.use(logger('dev'));
-
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
-app.use(express.static(path.join(__dirname, 'public')));
-app.use('/static', express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'public', 'css')));
-
-const middlewares = require('./api/middlewares');
-const routes = require('./api/routes');
-
-app.use(express.json());
-
-app.listen(port, () => console.log(`Server running at localhost:${port}`));
-
-app.use('/api', routes);
-
-
-app.get('/admin', async (req, res, next) => {
+// TODO: ASTA TREBUIE SCOASA DE AICI IN PRODUCTIE
+router.get('/admin', async (req, res, next) => {
     try {
         await dbUtils.resetDatabase();
         res.status(200).json({ message: 'SUCCES' });
@@ -40,12 +16,11 @@ app.get('/admin', async (req, res, next) => {
     }
 });
 
-app.post("/newDonation", async (req,res,next) => {
+router.post('/newDonation', async (req, res, next) => {
     try {
-        const ALLOWED_DONATION_TYPES = ['Bunuri', 'Monetara', 'Servicii'];
+        const ALLOWED_DONATION_TYPES = ['Bunuri', 'Bani', 'Servicii'];
 
         const donation = req.body;
-        console.log(donation);
         const errors = [];
         delete donation.Id;
 
@@ -75,24 +50,6 @@ app.post("/newDonation", async (req,res,next) => {
         // O trimit la error handler, probabil e fatala, e un middleware
         next(error);
     }
-})
-
-app.get('/', async (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/formular', async (req, res) => {
-    res.sendFile(path.join(__dirname,  'formular.html'));
-});
-
-app.get('/galerie', async (req, res) => {
-    res.sendFile(path.join(__dirname,  'galerie.html'));
-});
-
-
-
-// Lasam middleware ultimele ca sa functioneze
-app.use(middlewares.notFound);
-app.use(middlewares.errorHandler);
-
-
+module.exports = router;
