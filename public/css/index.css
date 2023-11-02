@@ -161,33 +161,8 @@ body {
   .center{
     color: #6c6864;
   }
-  /*
-<div class="container_invizibil" id="rezervare">
-    <div class="container" style="display: flex; align-items: center;">
-        <div class="coloana">
-            <form>
-                <label for="nume"><a>Nume</a></label><br>
-                <input type="text" id="nume" placeholder="Nume"><br>
-                <label for="prenume"><a>Prenume</a></label><br>
-                <input type="text" id="prenume" placeholder="Prenume"><br>
-                <label for="email"><a>Email:</a></label><br>
-                <input type="email" id="email" placeholder="Email"><br>
-                <label for="telefon"><a>Telefon</a></label><br>
-                <input type="tel" id="telefon" placeholder="Telefon"><br>
-                <label for="datepicker" id="idculoare"><a>Data</a></label><br>
-                <input type="date" class="form-control" name="date" style="width: 73.5%;">
-                <form id="demoForm" action="success.html" method="POST">
-                    <div class="form-group row">
-                        <div class="col-md-4">
-                        </div>
-                    </div>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                </form>
-        </div>
 
-    </div>
-</div>
-  */
+
   .container{
     display: flex;
     align-items: center;
@@ -244,11 +219,12 @@ select {
   align-items: center;
   justify-content: center;
   height: 700px;
-      width: 100%;
-    margin: -50px 25px auto;
+  width: 99.5%;
+      margin: -50px 25px auto;
   padding: 15px;
   border-color:rgb(13, 109, 60);
-  left: -5px;
+  position: relative; /* Set the position to relative */
+  left: -15px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -261,18 +237,17 @@ select {
   align-items: center;
   justify-content: center;
   height: 800px;
-  width: 100%;
-  margin: 0px 25px auto;
-  left: -5px;
+  width: 99.5%;
+    margin: 0px 25px auto;
 
   padding: 15px;
   border-color:rgb(13, 109, 60);
-
+  position: relative; /* Set the position to relative */
+  left: -15px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  overflow: auto; /* Add overflow to display scrollbars if content overflows */
 
  }
  .container3{
@@ -281,10 +256,9 @@ select {
   align-items: center;
   justify-content: center;
   height: 300px;
-  width: 100%;
-  margin: 0px 25px auto;
-  left: -5px;
-
+  width: 99.5%;  margin: 0px 25px auto;
+  position: relative; /* Set the position to relative */
+  left: -15px;
   padding: 15px;
   border-color:rgb(13, 109, 60);
 
@@ -292,8 +266,6 @@ select {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  overflow: auto; /* Add overflow to display scrollbars if content overflows */
-
  }
  .container4{
   background-color: #FFDFA1;
@@ -301,16 +273,16 @@ select {
   align-items: center;
   justify-content: center;
   height: 50px;
-  width: 100%;
-  margin: 0px 25px auto;
-  left: -5px;
+  width: 99.5%;
+    margin: 0px 25px auto;
+  position: relative;
+  left: -15px;
   padding: 15px;
   border-color:rgb(13, 109, 60);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  overflow: auto; 
  }
  .container5{
     background-color: #eae5e06d;
@@ -318,8 +290,8 @@ select {
     align-items: center;
     justify-content: center;
     height: 1200px;
-        width: 100%;
-      margin: -50px 25px auto;
+    width: 99.5%;
+          margin: -50px 25px auto;
     padding: 15px;
     border-color:rgb(13, 109, 60);
     left: -5px;
@@ -446,4 +418,4 @@ select {
   font-weight: 600;
   color: #fff;
   border-radius: 1.5rem;
-} /*Am fixat cateva aspecte */
+} /*Am fixat cateva aspecte */ 
