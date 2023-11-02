@@ -94,23 +94,7 @@ body {
     position: relative;
     color: transparent;
 }
-  .description {
-    font-size: 14px;
-    color: rgb(224, 117, 22);
-    text-align: center;
-  }
-  
-  .button {
-    border: none;
-    font-size: 16px;
-    color: transparent;
-    padding: 8px 16px;
-    background-color: rgb(225, 132, 33);
-    border-radius: 6px;
-    margin: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
+
 
   .swiper-navBtn::before, .swiper-navBtn::after {
     font-size: 35px;
