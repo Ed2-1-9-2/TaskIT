@@ -21,6 +21,7 @@ router.post('/newDonation', async (req, res, next) => {
         const ALLOWED_DONATION_TYPES = ['Bunuri', 'Bani', 'Servicii'];
 
         const donation = req.body;
+        console.log(donation);
         const errors = [];
         delete donation.Id;
 

@@ -23,30 +23,30 @@
       <button onclick="openNav()">Open</button>
     </nav>
     <div class="b_centered-form">
-      <form action="">
+      <form action="/api/newDonation" method="POST">
         <div class="b_form-wrapper">
           <div class="b_input-wrapper">
             <label for="nume">Nume</label>
-            <input type="text" id="nume" />
+            <input type="text" id="nume" name="firstName"/> 
           </div>
           <div class="b_input-wrapper">
             <label for="prenume">Prenume</label>
-            <input type="text" id="prenume" />
+            <input type="text" id="prenume"name="lastName">
           </div>
           <div class="b_input-wrapper">
             <label for="email">Email</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" name="email"/>
           </div>
           <div class="b_input-wrapper">
             <label for="tel">Telefon</label>
-            <input type="tel" id="tel" />
+            <input type="tel" id="tel" name="phone"/>
           </div>
           <div class="b_inline-wrapper">
-            <label for="donatie">Tipul donației</label>
-            <select name="donatie" id="donatie">
-              <option value="donatieMonetara">Monetară</option>
-              <option value="donatieBunuri">Bunuri</option>
-              <option value="donatieCarti">Carți</option>
+            <label for="donationType">Tipul donației</label>
+            <select name="donationType" id="donatie">
+              <option value="Bani">Monetară</option>
+              <option value="Bunuri">Bunuri</option>
+              <option value="Servicii">Carți</option>
             </select>
           </div>
           <div class="b_input-wrapper">
@@ -95,19 +95,19 @@
                 </svg>
                 <span>RON</span>
               </div>
-              <input type="text" name="suma" id="suma" />
+              <input type="text" name="donationValue" id="suma" />
             </div>
           </div>
           <div class="b_input-wrapper">
-            <label for="mentiuni">Mențiuni</label>
+            <label for="donationDescription">Mențiuni</label>
             <textarea
-              name="mentiuni"
+              name="donationDescription"
               id="mentiuni"
               cols="20"
               rows="10"
             ></textarea>
           </div>
-          <button class="b_submit">Trimite</button>
+          <button type="submit" class="b_submit">Trimite</button>
         </div>
       </form>
     </div>

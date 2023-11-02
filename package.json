@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.6.2",
+    "nodemon": "^3.0.1",
+    "sequelize": "^6.33.0"
+  },
+  "name": "taskdeechipait",
+  "description": "1.npm init\r 2.npm i express\r 3.npm i mysql2\r 4.npx nodemon",
+  "version": "1.0.0",
+  "main": "backend/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
