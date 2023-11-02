@@ -161,6 +161,33 @@ body {
   .center{
     color: #6c6864;
   }
+  /*
+<div class="container_invizibil" id="rezervare">
+    <div class="container" style="display: flex; align-items: center;">
+        <div class="coloana">
+            <form>
+                <label for="nume"><a>Nume</a></label><br>
+                <input type="text" id="nume" placeholder="Nume"><br>
+                <label for="prenume"><a>Prenume</a></label><br>
+                <input type="text" id="prenume" placeholder="Prenume"><br>
+                <label for="email"><a>Email:</a></label><br>
+                <input type="email" id="email" placeholder="Email"><br>
+                <label for="telefon"><a>Telefon</a></label><br>
+                <input type="tel" id="telefon" placeholder="Telefon"><br>
+                <label for="datepicker" id="idculoare"><a>Data</a></label><br>
+                <input type="date" class="form-control" name="date" style="width: 73.5%;">
+                <form id="demoForm" action="success.html" method="POST">
+                    <div class="form-group row">
+                        <div class="col-md-4">
+                        </div>
+                    </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                </form>
+        </div>
+
+    </div>
+</div>
+  */
   .container{
     display: flex;
     align-items: center;
@@ -216,7 +243,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 1200px;
+  height: 700px;
       width: 100%;
     margin: -50px 25px auto;
   padding: 15px;
@@ -285,6 +312,23 @@ select {
   border-bottom-right-radius: 10px;
   overflow: auto; 
  }
+ .container5{
+    background-color: #eae5e06d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1200px;
+        width: 100%;
+      margin: -50px 25px auto;
+    padding: 15px;
+    border-color:rgb(13, 109, 60);
+    left: -5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  
+   }
  .container2:border  .container3:border  .container4:border {
   border: 2px solid #F6b8D1; /* Green color when hovered */
   outline: none;
@@ -402,4 +446,4 @@ select {
   font-weight: 600;
   color: #fff;
   border-radius: 1.5rem;
-}
+} /*Am fixat cateva aspecte */
